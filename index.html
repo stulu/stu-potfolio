@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <title>My CV</title>
@@ -20,6 +20,10 @@
       aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+
+    <a id="language-changer" href="#">español</a>
+
+
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item active">
@@ -201,6 +205,22 @@
       document.getElementById(id).style.display = "none";
     }
   </script>
+
+
+  <script>
+    var languageChanger = document.getElementById("language-changer");
+    var isEnglish = true;
+
+    languageChanger.addEventListener("click", function () {
+      if (isEnglish) {
+        location.href = "spanishversion.html";
+      } else {
+        location.href = "index.html";
+      }
+      isEnglish = !isEnglish;
+    });
+  </script>
+
 
 </body>
 
