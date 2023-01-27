@@ -4,21 +4,21 @@ body {
     background-color: whitesmoke;
 }
 
-
-.img1 {
-
-    margin-left: auto;
-    border-radius: 25px;
-    margin-top: 15px;
-}
-
-
-#nav,
-#about,
-#exp-section {
+#nav {
 
     background-color: blanchedalmond;
 }
+
+@media screen and (max-width: 768px) {
+
+    #about,
+    #exp-section {
+
+        background-color: blanchedalmond;
+    }
+
+}
+
 
 #language-changer {
 
@@ -63,6 +63,7 @@ h4 {
 
         margin-left: 30px;
     }
+
 
 }
 
