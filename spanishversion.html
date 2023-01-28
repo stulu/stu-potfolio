@@ -71,8 +71,8 @@
                 <p class="mt-3" id="about-text">Más de 10 años de dirigir y hacer crecer con éxito mi propio negocio de
                     enseñanza de
                     inglés. Decidí cambiar de trayectoria profesional a la gestión de proyectos y obtuve el certificado
-                    de gestión de proyectos de Google en 2022 para mejorar aún más mis excelentes habilidades de
-                    organización y comunicación. Experiencia en entornos orientados a resultados, como el comercio
+                    de gestión de proyectos de Google en 2022 para mejorar aún más mis habilidades de
+                    organización y comunicación. Poseo experiencia en entornos orientados a resultados, como el comercio
                     minorista, el turismo y la industria de TI.. </p>
             </div>
             <div class="col-md-8">
@@ -129,12 +129,13 @@
                 <div class="col-md-8">
                     <h4>Zarego</h4>
                     <p>Project Manager - 7/2022 al presente</p>
-                    <p>Responsable de la comunicación entre el cliente y el equipo de desarrollo para resolver un sitio
-                        web pirateado y actualizarlo y asegurarlo. Responsable de la fijación de reuniones,
+                    <p>Responsable de la comunicación entre el cliente y el equipo de desarrollo para solucionar un
+                        sitio
+                        web pirateado y actualizarlo y asegurarlo. Responsable de la organización de reuniones,
                         documentación y toma de decisiones. </p>
                     <h4>Trabajador autónomo</h4>
-                    <p>Profesora de inglés - 4/2007 al presente</p>
-                    <p>Dirijo mi propia empresa de enseñanza de inglés y trabajo como profesora de inglés. Soy
+                    <p>Profesor de inglés - 4/2007 al presente</p>
+                    <p>Dirijo mi propia empresa de enseñanza de inglés y trabajo como profesor de inglés. Soy
                         responsable de encontrar estudiantes, profesores, organizar horarios, facturar, pagar a los
                         profesores y garantizar la calidad.</p>
                     <h4>Signature Tours</h4>
@@ -153,7 +154,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <h3>Cursos</h3>
-                    <p id="courses-certificate">Pase el cursor sobre el organismo emisor para ver el enlace de
+                    <p id="courses-certificate">Pasar el cursor sobre el organismo emisor para ver el enlace de
                         certificación!</p>
 
                 </div>
@@ -206,6 +207,19 @@
         function hideLink(id) {
             document.getElementById(id).style.display = "none";
         }
+    </script>
+
+    <script>
+        const certificateText = document.getElementById("courses-certificate");
+
+        window.addEventListener("resize", function () {
+            if (window.innerWidth <= 767) {
+                certificateText.innerHTML = "Tocar el organismo emisor para ver el enlace de certificación!";
+            } else {
+                certificateText.innerHTML =
+                    "Pasar el cursor sobre el organismo emisor para ver el enlace de certificación!";
+            }
+        });
     </script>
 
 </body>

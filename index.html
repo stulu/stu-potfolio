@@ -223,6 +223,18 @@
     });
   </script>
 
+  <script>
+    const certificateText = document.getElementById("courses-certificate");
+
+    window.addEventListener("resize", function () {
+      if (window.innerWidth <= 767) {
+        certificateText.innerHTML = "Tap issuing body to see certification link!";
+      } else {
+        certificateText.innerHTML = "Hover over issuing body to see certification link!";
+      }
+    });
+  </script>
+
 
 </body>
 

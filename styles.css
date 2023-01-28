@@ -92,10 +92,6 @@ h1 {
     }
 }
 
-.img-fluid {
-    margin-right: 0px;
-}
-
 h3,
 h4 {
 
@@ -120,7 +116,7 @@ h4 {
 
 #quote2 {
 
-    margin-top: 70px;
+    margin-top: 50px;
     margin-bottom: 40px;
 
 }
