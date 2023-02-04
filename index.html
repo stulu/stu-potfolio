@@ -161,24 +161,24 @@
         </div>
         <div class="col-md-8">
           <h4>Google Project Management - 2022</h4>
-          <p onmouseover="showLink('link1')" onmouseout="hideLink('link1')">
-            Coursera
+          <p id="certf-link1" onmouseover="showLink('link1')" onmouseout="hideLink('link1')">
+            <a href="https://www.credly.com/badges/5c229081-a70b-42ad-b614-6664e9fa5e7b" class="link-style">Coursera</a>
             <a id="link1" href="https://www.credly.com/badges/5c229081-a70b-42ad-b614-6664e9fa5e7b"
               style="display:none">see certificate</a></p>
 
           <h4>Python Full Stack - 2020</h4>
-          <p onmouseover="showLink('link2')" onmouseout="hideLink('link2')">
-            Codo a Codo
+          <p id="certf-link2" onmouseover="showLink('link2')" onmouseout="hideLink('link2')">
+            <a href="https://drive.google.com/file/d/1WlZXko3WzRqBBw2_HzLY6fH13pS3bfgS/view" class="link-style">Codo a
+              Codo</a>
             <a id="link2" href="https://drive.google.com/file/d/1WlZXko3WzRqBBw2_HzLY6fH13pS3bfgS/view"
               style="display:none">see certificate</a></p>
 
           <h4>Java & SQL - 2019 </h4>
-          <p onmouseover="showLink('link3')" onmouseout="hideLink('link3')">
-            Codo a Codo
+          <p id="certf-link3" onmouseover="showLink('link3')" onmouseout="hideLink('link3')">
+            <a href="https://drive.google.com/file/d/12afZ9F8RDipup-klKLLUGoz_Xlq2ISUH/view" class="link-style">Codo a
+              Codo</a>
             <a id="link3" href="https://drive.google.com/file/d/12afZ9F8RDipup-klKLLUGoz_Xlq2ISUH/view"
               style="display:none">see certificate</a></p>
-
-
         </div>
       </div>
     </div>
@@ -224,6 +224,20 @@
   </script>
 
   <script>
+    function showLink(id) {
+      if (window.innerWidth > 767) {
+        document.getElementById(id).style.display = "block";
+      }
+    }
+
+    function hideLink(id) {
+      if (window.innerWidth > 767) {
+        document.getElementById(id).style.display = "none";
+      }
+    }
+  </script>
+
+  <script>
     const certificateText = document.getElementById("courses-certificate");
 
     window.addEventListener("resize", function () {
@@ -234,7 +248,6 @@
       }
     });
   </script>
-
 
 </body>
 
