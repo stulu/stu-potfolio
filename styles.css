@@ -73,6 +73,24 @@ div.footer {
 
 }
 
+.nav-icon {
+
+    margin-left: 40px;
+
+}
+
+@media screen and (max-width: 991px) {
+
+    .navbar {
+        flex-direction: row-reverse;
+    }
+
+    .nav-icon {
+
+        margin-right: 40px;
+    }
+}
+
 h1 {
     margin-top: 50px;
 }
@@ -90,6 +108,7 @@ h1 {
 #social-media-links {
 
     margin-top: 75px;
+
 }
 
 .text-center {
@@ -103,6 +122,10 @@ h1 {
 
         height: 80%;
     }
+}
+
+a {
+    margin-right: 10px;
 }
 
 
@@ -165,6 +188,10 @@ div.footer {
 
 footer {
     margin-top: 8px;
+}
+
+i {
+    padding-right: 10px;
 }
 
 @media screen and (min-width: 768px) {
