@@ -15,6 +15,11 @@ h3 {
     font-family: 'Abril Fatface';
 }
 
+h3 {
+
+    font-weight: 600;
+}
+
 p,
 li {
     font-family: 'Lato';
@@ -97,6 +102,7 @@ div.footer {
 
 h1 {
     margin-top: 50px;
+
 }
 
 #quote {
